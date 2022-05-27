@@ -1,10 +1,14 @@
+import { Link } from "react-router-dom";
+
 export const Navbar = () => {
 	return (
 		<nav className='flex flex-row justify-between px-8 py-4 min-w-full bg-white items-center'>
-			<h1 className='flex flex-wrap items-baseline gap-2'>
-				<span className='text-3xl font-bold text-indigo-600'>WorkTime</span>{" "}
-				<span className='text-2xl font-medium text-gray-600'>Pomodoro Timer</span>
-			</h1>
+			<Link to={"/"}>
+				<h1 className='flex flex-wrap items-baseline gap-2'>
+					<span className='text-3xl font-bold text-indigo-600'>WorkTime</span>{" "}
+					<span className='text-2xl font-medium text-gray-600'>Pomodoro Timer</span>
+				</h1>
+			</Link>
 			<a href='https://github.com/ChhikaraBRUH/work-time' target='_blank'>
 				<button
 					type='button'
