@@ -37,9 +37,11 @@ export const Tasks = () => {
 				</div>
 
 				<div className='flex flex-col gap-4'>
-					{taskState.tasks.map((task) => (
-						<TaskCard key={task.id} task={task} toggleModal={toggleModal} />
-					))}
+					{taskState.tasks.length === 0 ? (
+						<p className='text-xl font-medium'>No tasks added yet! Add some!</p>
+					) : (
+						taskState.tasks.map((task) => <TaskCard key={task.id} task={task} toggleModal={toggleModal} />)
+					)}
 				</div>
 			</section>
 		</div>
