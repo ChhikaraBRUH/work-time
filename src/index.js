@@ -3,12 +3,15 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
+import { TaskProvider } from "./context/tasks-context";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
 	<StrictMode>
 		<Router>
-			<App />
+			<TaskProvider>
+				<App />
+			</TaskProvider>
 		</Router>
 	</StrictMode>,
 	rootElement

@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { Navbar } from "./components/Navbar";
+import { Navbar } from "./components";
 import { Landing } from "./pages/Landing";
 import { PageNotFound } from "./pages/PageNotFound";
 import { Pomodoro } from "./pages/Pomodoro";
